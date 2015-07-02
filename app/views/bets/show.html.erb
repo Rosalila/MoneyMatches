@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Better:</strong>
+  <%= @bet.better %>
+</p>
+
+<p>
+  <strong>Player:</strong>
+  <%= @bet.player %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @bet.amount %>
+</p>
+
+<p>
+  <strong>Player percentage:</strong>
+  <%= @bet.player_percentage %>
+</p>
+
+<p>
+  <strong>Elgato percentage:</strong>
+  <%= @bet.elgato_percentage %>
+</p>
+
+<p>
+  <strong>Return percentage:</strong>
+  <%= @bet.return_percentage %>
+</p>
+
+<%= link_to 'Edit', edit_bet_path(@bet) %> |
+<%= link_to 'Back', bets_path %>

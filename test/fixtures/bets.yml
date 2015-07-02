@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  better: MyString
+  player: MyString
+  amount: 1
+  player_percentage: 9.99
+  elgato_percentage: 9.99
+  return_percentage: 9.99
+
+two:
+  better: MyString
+  player: MyString
+  amount: 1
+  player_percentage: 9.99
+  elgato_percentage: 9.99
+  return_percentage: 9.99

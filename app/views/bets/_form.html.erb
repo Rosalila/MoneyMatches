@@ -1,0 +1,41 @@
+<%= form_for(@bet) do |f| %>
+  <% if @bet.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@bet.errors.count, "error") %> prohibited this bet from being saved:</h2>
+
+      <ul>
+      <% @bet.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :better %><br>
+    <%= f.text_field :better %>
+  </div>
+  <div class="field">
+    <%= f.label :player %><br>
+    <%= f.text_field :player %>
+  </div>
+  <div class="field">
+    <%= f.label :amount %><br>
+    <%= f.number_field :amount %>
+  </div>
+  <div class="field">
+    <%= f.label :player_percentage %><br>
+    <%= f.text_field :player_percentage %>
+  </div>
+  <div class="field">
+    <%= f.label :elgato_percentage %><br>
+    <%= f.text_field :elgato_percentage %>
+  </div>
+  <div class="field">
+    <%= f.label :return_percentage %><br>
+    <%= f.text_field :return_percentage %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>
